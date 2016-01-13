@@ -1,7 +1,7 @@
 require 'pry'
 
 class Hangman
-  @@possible_words = ["pickles"]
+  @@possible_words = ["pickles","apples","interesting","cool","ruby"]
   @@answer_key = ""
   @@guesses = 0
   @@state = ""
