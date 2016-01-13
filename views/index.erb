@@ -1,0 +1,10 @@
+<h1>Hangman</h1>
+<%= @answer.gsub(/[^\+#{@guesses}]/,'_ ') %>
+<form action='/guess' method='post'>
+  <input type="text" name="guess" maxlength="1" placeholder="Make a guess!">
+  <button type="submit">Guess</button>
+</form>
+
+<form action='/start' method='post'>
+  <button type="submit">New Game</button>
+</form>
